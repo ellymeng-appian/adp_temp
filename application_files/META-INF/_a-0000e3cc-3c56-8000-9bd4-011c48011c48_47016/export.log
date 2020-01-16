@@ -1,0 +1,1313 @@
+Problems (1):
+processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a "EM_Trailing_Underscores2": The processModel [id=502 uuid=0002e3cc-6951-8000-fbec-7f0000014e7a] was not exported because it contains an invalid precedent: content [uuid=7854 location=Node > "Text Doc from Template" > Node Input > "BodyTemplate"] cannot be found. (APNX-1-4070-001) (APNX-1-4071-003)
+
+Success (27):
+datatype 3730 {urn:com:appian:types}EM_PersonCDT "{urn:com:appian:types}EM_PersonCDT"
+dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 "EM_PersonDS"
+group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 "ACS_Administrators"
+content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 "EM_KC"
+content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 "EM_Documents"
+content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 "TTD_template_t"
+content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 "ATM_EMPTY_RB"
+content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 "ATM_EMTPY_RB_t"
+content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 "EM_Rules"
+content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 "ATM_EMTPY_RB_t"
+content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 "EM_CreatePerson"
+content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 "EM_PersonDSE_PTR"
+content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 "EM_Grid"
+content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 "Appian Bug"
+content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 "Appian Common Objects"
+content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 "Common Application Rules"
+content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 "APN Informational Rules"
+content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 "APN_isEmpty"
+content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 "BUG_Component_FitNesseSafeCard"
+content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 "BUG_LayeredLinkTest"
+content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 "EM_ConvertHTMLWithNewlines"
+content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 "EM_TestHTMLNewline"
+content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 "EM_striphtml"
+processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 "EM_PMs"
+processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a "EM_WriteToDSE"
+processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a "EM_SFTP"
+application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 "Elly_Box"
+
+Trace:
+2020-01-16 18:08:48.924 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Begin transport.
+2020-01-16 18:08:48.924 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Retrieving object data.
+2020-01-16 18:08:48.934 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 App associated objects: [datatype=[{urn:com:appian:types}EM_PersonCDT],dataStore=[_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192],group=[_e-0000dec9-5813-8000-30e7-011e94011e94_10],content=[_a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47110, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47112, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47114, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47134, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47146, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47162, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47947, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47980, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47996, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48021, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48054, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48071, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48084, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48101, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48118, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48135, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48158, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48178, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48194, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48376, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226, _a-0000e124-5986-8000-9ba2-011c48011c48_948581, _a-0000d618-256c-8000-da6f-010000010000_859, _a-0000d615-4c22-8000-da6f-010000010000_777, _a-0000d73e-944a-8000-9ba2-011c48011c48_13373, _a-0000d62a-67b3-8000-da6f-010000010000_951, _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730, _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690, _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565],processModelFolder=[_g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143],processModel=[0002e3cc-5b23-8000-fbcb-7f0000014e7a, 0002e3cc-6951-8000-fbec-7f0000014e7a, 0002e3d0-340e-8000-fc24-7f0000014e7a, 0002e3da-c51d-8000-fc7a-7f0000014e7a]]
+2020-01-16 18:08:48.946 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Invalid associated objects: [content=[_a-0000e3cc-3c56-8000-9bd4-011c48011c48_47110, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47112, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47114, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47134, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47146, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47162, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47947, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47980, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47996, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48021, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48054, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48071, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48084, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48101, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48118, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48135, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48158, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48178, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48194, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48376],processModel=[0002e3cc-5b23-8000-fbcb-7f0000014e7a]]
+2020-01-16 18:08:48.946 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Adding valid associated objects to be exported: GlobalBindingMap[datatype={{urn:com:appian:types}EM_PersonCDT=3730},dataStore={_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192=7970},group={_e-0000dec9-5813-8000-30e7-011e94011e94_10=85},content={_a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081=7705, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088=7706, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246=7867, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263=7868, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265=7869, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371=7883, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059=7955, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207=7972, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220=7982, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226=7974, _a-0000e124-5986-8000-9ba2-011c48011c48_948581=7996, _a-0000d618-256c-8000-da6f-010000010000_859=7997, _a-0000d615-4c22-8000-da6f-010000010000_777=7998, _a-0000d73e-944a-8000-9ba2-011c48011c48_13373=7999, _a-0000d62a-67b3-8000-da6f-010000010000_951=8000, _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730=8001, _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674=8002, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677=8015, _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690=8016, _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565=8213},processModelFolder={_g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143=6},processModel={0002e3cc-6951-8000-fbec-7f0000014e7a=502, 0002e3d0-340e-8000-fc24-7f0000014e7a=533, 0002e3da-c51d-8000-fc7a-7f0000014e7a=588}]
+2020-01-16 18:08:48.946 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Setting uuids of object references.
+2020-01-16 18:08:48.946 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Processing reference: Application.forum
+2020-01-16 18:08:48.947 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Processing reference: Application.parent
+2020-01-16 18:08:48.955 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@2c86c8fe[
+  ContentRole[name=readers,inherit=false,allowForAll=false]
+  ContentRole[name=authors,inherit=false,allowForAll=false]
+  ContentRole[name=administrators,inherit=false,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=1:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=false,SEC_INH_EDITOR=false,SEC_INH_VIEWER=false,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:48.955 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
+2020-01-16 18:08:48.955 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
+2020-01-16 18:08:48.955 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Processing reference: ContentRole[name=administrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:48.955 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:48.955 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:48.956 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:48.956 DEBUG datatype 3730 {urn:com:appian:types}EM_PersonCDT Begin transport.
+2020-01-16 18:08:48.956 DEBUG datatype 3730 {urn:com:appian:types}EM_PersonCDT Retrieving object data.
+2020-01-16 18:08:48.983 DEBUG datatype 3730 {urn:com:appian:types}EM_PersonCDT Setting uuids of object references.
+2020-01-16 18:08:48.984 DEBUG datatype 3730 {urn:com:appian:types}EM_PersonCDT Completing produce.
+2020-01-16 18:08:48.984 DEBUG datatype 3730 {urn:com:appian:types}EM_PersonCDT Exporting binary resources.
+2020-01-16 18:08:48.984 DEBUG datatype 3730 {urn:com:appian:types}EM_PersonCDT Serializing object to XML.
+2020-01-16 18:08:48.989 DEBUG datatype 3730 {urn:com:appian:types}EM_PersonCDT Object transported.
+2020-01-16 18:08:48.992 DEBUG dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 Begin transport.
+2020-01-16 18:08:48.992 DEBUG dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 Retrieving object data.
+2020-01-16 18:08:48.997 DEBUG dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 Setting uuids of object references.
+2020-01-16 18:08:48.997 DEBUG dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 Processing reference: datatypeRef[id=3730]
+2020-01-16 18:08:48.997 DEBUG dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 Processing reference: ContentRole[name=administrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:48.997 DEBUG dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
+2020-01-16 18:08:48.997 DEBUG dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:48.997 DEBUG dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:48.997 DEBUG dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:48.997 DEBUG dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
+2020-01-16 18:08:48.998 DEBUG dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 Completing produce.
+2020-01-16 18:08:48.998 DEBUG dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 Exporting binary resources.
+2020-01-16 18:08:48.998 DEBUG dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 Serializing object to XML.
+2020-01-16 18:08:49.016 DEBUG dataStore 7970 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49192 Object transported.
+2020-01-16 18:08:49.018 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Begin transport.
+2020-01-16 18:08:49.018 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Retrieving object data.
+2020-01-16 18:08:49.027 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Setting uuids of object references.
+2020-01-16 18:08:49.027 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Processing reference: Role[name=<null>,groupIds=[85]]
+2020-01-16 18:08:49.028 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Begin transport.
+2020-01-16 18:08:49.028 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Loop detected: [group:85]
+2020-01-16 18:08:49.028 DEBUG group 85 Breaking loop [group:85]. group:85 will be transported with its reference to 85 nulled out and will require a second pass.
+2020-01-16 18:08:49.028 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Processing reference: Group.groupTypeId
+2020-01-16 18:08:49.03 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Processing reference: Group.parentId
+2020-01-16 18:08:49.03 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Processing reference: Group.homePageId
+2020-01-16 18:08:49.03 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Processing reference: Role[name=<null>]
+2020-01-16 18:08:49.031 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Completing produce.
+2020-01-16 18:08:49.031 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Object transported with these references nulled out: [group:85]
+2020-01-16 18:08:49.031 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Binding pending incomplete: group:85
+2020-01-16 18:08:49.033 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Begin transport.
+2020-01-16 18:08:49.033 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Retrieving object data.
+2020-01-16 18:08:49.043 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Setting uuids of object references.
+2020-01-16 18:08:49.043 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Processing reference: Role[name=<null>,groupIds=[85]]
+2020-01-16 18:08:49.045 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Processing reference: Group.groupTypeId
+2020-01-16 18:08:49.048 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Processing reference: Group.parentId
+2020-01-16 18:08:49.049 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Processing reference: Group.homePageId
+2020-01-16 18:08:49.049 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Processing reference: Role[name=<null>]
+2020-01-16 18:08:49.049 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Completing produce.
+2020-01-16 18:08:49.049 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Exporting binary resources.
+2020-01-16 18:08:49.049 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Serializing object to XML.
+2020-01-16 18:08:49.061 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Removed object from incomplete list.
+2020-01-16 18:08:49.061 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Object transported.
+2020-01-16 18:08:49.061 DEBUG group 85 _e-0000dec9-5813-8000-30e7-011e94011e94_10 Binding pending incomplete: group:85
+2020-01-16 18:08:49.065 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Begin transport.
+2020-01-16 18:08:49.065 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Retrieving object data.
+2020-01-16 18:08:49.077 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Setting uuids of object references.
+2020-01-16 18:08:49.078 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Processing reference: CommunityKnowledgeCenter.forum
+2020-01-16 18:08:49.078 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Processing reference: CommunityKnowledgeCenter.parent
+2020-01-16 18:08:49.082 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@2262391e[
+  ContentRole[name=readers,inherit=false,allowForAll=false]
+  ContentRole[name=authors,inherit=false,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=9:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=false,SEC_INH_VIEWER=false,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.082 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.082 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.082 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.082 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.082 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.082 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.082 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Completing produce.
+2020-01-16 18:08:49.083 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Exporting binary resources.
+2020-01-16 18:08:49.083 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Serializing object to XML.
+2020-01-16 18:08:49.099 DEBUG content 7705 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47081 Object transported.
+2020-01-16 18:08:49.099 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Begin transport.
+2020-01-16 18:08:49.099 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Retrieving object data.
+2020-01-16 18:08:49.11 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Setting uuids of object references.
+2020-01-16 18:08:49.11 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Processing reference: KnowledgeFolder.forum
+2020-01-16 18:08:49.111 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Processing reference: KnowledgeFolder.parent
+2020-01-16 18:08:49.115 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@2c3073c0[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.115 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.115 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.115 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.115 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.115 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.115 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.115 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Completing produce.
+2020-01-16 18:08:49.115 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Exporting binary resources.
+2020-01-16 18:08:49.115 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Serializing object to XML.
+2020-01-16 18:08:49.127 DEBUG content 7706 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47088 Object transported.
+2020-01-16 18:08:49.127 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Begin transport.
+2020-01-16 18:08:49.127 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Retrieving object data.
+2020-01-16 18:08:49.137 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Setting uuids of object references.
+2020-01-16 18:08:49.137 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Processing reference: Document.forum
+2020-01-16 18:08:49.137 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Processing reference: Document.parent
+2020-01-16 18:08:49.14 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@723f090b[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.14 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.14 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.141 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.141 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.141 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.141 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.141 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Completing produce.
+2020-01-16 18:08:49.141 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Exporting binary resources.
+2020-01-16 18:08:49.154 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Serializing object to XML.
+2020-01-16 18:08:49.159 DEBUG content 7867 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48246 Object transported.
+2020-01-16 18:08:49.159 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Begin transport.
+2020-01-16 18:08:49.159 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Retrieving object data.
+2020-01-16 18:08:49.174 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Setting uuids of object references.
+2020-01-16 18:08:49.174 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Processing reference: Document.forum
+2020-01-16 18:08:49.174 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Processing reference: Document.parent
+2020-01-16 18:08:49.179 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@2778de3f[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.179 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.179 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.179 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.179 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.179 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.179 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.179 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Completing produce.
+2020-01-16 18:08:49.179 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Exporting binary resources.
+2020-01-16 18:08:49.2 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Serializing object to XML.
+2020-01-16 18:08:49.209 DEBUG content 7868 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48263 Object transported.
+2020-01-16 18:08:49.209 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Begin transport.
+2020-01-16 18:08:49.209 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Retrieving object data.
+2020-01-16 18:08:49.223 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Setting uuids of object references.
+2020-01-16 18:08:49.223 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Processing reference: Document.forum
+2020-01-16 18:08:49.223 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Processing reference: Document.parent
+2020-01-16 18:08:49.227 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@45c5ac8c[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.227 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.227 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.227 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.227 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.227 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.227 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.227 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Completing produce.
+2020-01-16 18:08:49.227 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Exporting binary resources.
+2020-01-16 18:08:49.242 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Serializing object to XML.
+2020-01-16 18:08:49.247 DEBUG content 7869 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48265 Object transported.
+2020-01-16 18:08:49.247 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Begin transport.
+2020-01-16 18:08:49.247 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Retrieving object data.
+2020-01-16 18:08:49.258 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Setting uuids of object references.
+2020-01-16 18:08:49.258 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Processing reference: RulesFolder.forum
+2020-01-16 18:08:49.258 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Processing reference: RulesFolder.parent
+2020-01-16 18:08:49.262 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@6fbacff[
+  ContentRole[name=readers,inherit=false,allowForAll=false]
+  ContentRole[name=authors,inherit=false,allowForAll=false]
+  ContentRole[name=administrators,inherit=false,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=1:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=false,SEC_INH_EDITOR=false,SEC_INH_VIEWER=false,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.262 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.262 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.262 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Processing reference: ContentRole[name=administrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.262 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.262 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.262 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.262 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Completing produce.
+2020-01-16 18:08:49.262 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Exporting binary resources.
+2020-01-16 18:08:49.262 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Serializing object to XML.
+2020-01-16 18:08:49.271 DEBUG content 7883 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371 Object transported.
+2020-01-16 18:08:49.271 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Begin transport.
+2020-01-16 18:08:49.271 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Retrieving object data.
+2020-01-16 18:08:49.284 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Setting uuids of object references.
+2020-01-16 18:08:49.284 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Processing reference: Document.forum
+2020-01-16 18:08:49.285 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Processing reference: Document.parent
+2020-01-16 18:08:49.288 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@946e2cf[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.288 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.288 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.289 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.289 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.289 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.289 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.289 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Completing produce.
+2020-01-16 18:08:49.289 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Exporting binary resources.
+2020-01-16 18:08:49.315 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Serializing object to XML.
+2020-01-16 18:08:49.323 DEBUG content 7955 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49059 Object transported.
+2020-01-16 18:08:49.323 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Begin transport.
+2020-01-16 18:08:49.323 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Retrieving object data.
+2020-01-16 18:08:49.348 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Setting uuids of object references.
+2020-01-16 18:08:49.348 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Processing reference: [Content:id=7971,versionId=-1,name=EM_CreatePerson,type=32,subtype=6,uuid=_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207,parent=7883]
+2020-01-16 18:08:49.35 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Processing reference: Interface.forum
+2020-01-16 18:08:49.35 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Processing reference: TypedVariable[name=EM_PersonCDT,it=3730,v=<null>]
+2020-01-16 18:08:49.351 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Processing reference: TypedVariable[name=cancel,it=26,v=<null>]
+2020-01-16 18:08:49.351 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Processing reference: TypedVariable[name=readOnly,it=26,v=<null>]
+2020-01-16 18:08:49.351 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Processing reference: Interface.parent
+2020-01-16 18:08:49.355 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@16e3e064[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.355 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.355 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.355 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.355 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.355 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.355 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.356 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Completing produce.
+2020-01-16 18:08:49.356 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Exporting binary resources.
+2020-01-16 18:08:49.356 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Serializing object to XML.
+2020-01-16 18:08:49.37 DEBUG content 7972 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207 Object transported.
+2020-01-16 18:08:49.37 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Begin transport.
+2020-01-16 18:08:49.37 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Retrieving object data.
+2020-01-16 18:08:49.39 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Setting uuids of object references.
+2020-01-16 18:08:49.39 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Processing reference: [Content:id=7973,versionId=-1,name=EM_Grid,type=32,subtype=6,uuid=_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220,parent=7883]
+2020-01-16 18:08:49.402 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Begin transport.
+2020-01-16 18:08:49.402 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Retrieving object data.
+2020-01-16 18:08:49.415 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Setting uuids of object references.
+2020-01-16 18:08:49.415 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Processing reference: [Content:id=7974,versionId=-1,name=EM_PersonDSE_PTR,type=32,subtype=0,uuid=_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226,parent=7883]
+2020-01-16 18:08:49.419 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Processing reference: Constant.forum
+2020-01-16 18:08:49.42 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Processing reference: Constant.parent
+2020-01-16 18:08:49.424 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@3397adb[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.424 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.424 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.424 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.424 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.424 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.424 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.424 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Completing produce.
+2020-01-16 18:08:49.425 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Exporting binary resources.
+2020-01-16 18:08:49.425 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Serializing object to XML.
+2020-01-16 18:08:49.447 DEBUG content 7974 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226 Object transported.
+2020-01-16 18:08:49.447 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Processing reference: Interface.forum
+2020-01-16 18:08:49.448 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Processing reference: Interface.parent
+2020-01-16 18:08:49.456 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@11111f1a[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.456 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.461 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.461 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.461 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.461 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.461 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.462 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Completing produce.
+2020-01-16 18:08:49.462 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Exporting binary resources.
+2020-01-16 18:08:49.462 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Serializing object to XML.
+2020-01-16 18:08:49.485 DEBUG content 7982 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220 Object transported.
+2020-01-16 18:08:49.485 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Begin transport.
+2020-01-16 18:08:49.485 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Retrieving object data.
+2020-01-16 18:08:49.506 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Setting uuids of object references.
+2020-01-16 18:08:49.506 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Processing reference: RulesFolder.forum
+2020-01-16 18:08:49.508 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Processing reference: RulesFolder.parent
+2020-01-16 18:08:49.514 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@707e33b7[
+  ContentRole[name=readers,inherit=false,allowForAll=false]
+  ContentRole[name=authors,inherit=false,allowForAll=false]
+  ContentRole[name=administrators,inherit=false,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=1:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=false,SEC_INH_EDITOR=false,SEC_INH_VIEWER=false,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.514 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.514 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.515 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Processing reference: ContentRole[name=administrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.515 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.515 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.515 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.515 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Completing produce.
+2020-01-16 18:08:49.515 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Exporting binary resources.
+2020-01-16 18:08:49.515 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Serializing object to XML.
+2020-01-16 18:08:49.525 DEBUG content 7996 _a-0000e124-5986-8000-9ba2-011c48011c48_948581 Object transported.
+2020-01-16 18:08:49.525 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Begin transport.
+2020-01-16 18:08:49.525 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Retrieving object data.
+2020-01-16 18:08:49.538 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Setting uuids of object references.
+2020-01-16 18:08:49.538 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Processing reference: RulesFolder.forum
+2020-01-16 18:08:49.539 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Processing reference: RulesFolder.parent
+2020-01-16 18:08:49.544 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@258ba6f7[
+  ContentRole[name=readers,inherit=false,allowForAll=false]
+  ContentRole[name=authors,inherit=false,allowForAll=false]
+  ContentRole[name=administrators,usernames=[Administrator],groupIds=[85],inherit=false,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=1:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=false,SEC_INH_EDITOR=false,SEC_INH_VIEWER=false,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.545 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.545 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.545 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Processing reference: ContentRole[name=administrators,usernames=[Administrator],groupIds=[85],inherit=false,allowForAll=false]
+2020-01-16 18:08:49.548 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.548 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.548 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.548 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Completing produce.
+2020-01-16 18:08:49.548 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Exporting binary resources.
+2020-01-16 18:08:49.548 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Serializing object to XML.
+2020-01-16 18:08:49.56 DEBUG content 7997 _a-0000d618-256c-8000-da6f-010000010000_859 Object transported.
+2020-01-16 18:08:49.56 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Begin transport.
+2020-01-16 18:08:49.56 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Retrieving object data.
+2020-01-16 18:08:49.57 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Setting uuids of object references.
+2020-01-16 18:08:49.57 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Processing reference: RulesFolder.forum
+2020-01-16 18:08:49.571 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Processing reference: RulesFolder.parent
+2020-01-16 18:08:49.575 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@615644bb[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,usernames=[Administrator],inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.575 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.575 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.575 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Processing reference: ContentRole[name=administrators,usernames=[Administrator],inherit=true,allowForAll=false]
+2020-01-16 18:08:49.577 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.577 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.577 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.577 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Completing produce.
+2020-01-16 18:08:49.577 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Exporting binary resources.
+2020-01-16 18:08:49.577 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Serializing object to XML.
+2020-01-16 18:08:49.589 DEBUG content 7998 _a-0000d615-4c22-8000-da6f-010000010000_777 Object transported.
+2020-01-16 18:08:49.589 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Begin transport.
+2020-01-16 18:08:49.589 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Retrieving object data.
+2020-01-16 18:08:49.598 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Setting uuids of object references.
+2020-01-16 18:08:49.598 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Processing reference: RulesFolder.forum
+2020-01-16 18:08:49.599 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Processing reference: RulesFolder.parent
+2020-01-16 18:08:49.602 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@53e75506[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.602 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.602 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.602 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.602 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.602 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.603 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.603 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Completing produce.
+2020-01-16 18:08:49.603 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Exporting binary resources.
+2020-01-16 18:08:49.603 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Serializing object to XML.
+2020-01-16 18:08:49.615 DEBUG content 7999 _a-0000d73e-944a-8000-9ba2-011c48011c48_13373 Object transported.
+2020-01-16 18:08:49.615 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Begin transport.
+2020-01-16 18:08:49.615 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Retrieving object data.
+2020-01-16 18:08:49.625 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Setting uuids of object references.
+2020-01-16 18:08:49.625 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Processing reference: [Content:id=8000,versionId=-1,name=APN_isEmpty,type=32,subtype=1,uuid=_a-0000d62a-67b3-8000-da6f-010000010000_951,parent=7999]
+2020-01-16 18:08:49.625 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Processing reference: FreeformRule.forum
+2020-01-16 18:08:49.626 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Processing reference: TypedVariable[name=array,it=97,v=<null>]
+2020-01-16 18:08:49.626 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Processing reference: FreeformRule.parent
+2020-01-16 18:08:49.629 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@6b1c0f93[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,usernames=[Administrator],inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.629 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.629 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.629 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Processing reference: ContentRole[name=administrators,usernames=[Administrator],inherit=true,allowForAll=false]
+2020-01-16 18:08:49.631 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.631 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.631 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.631 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Completing produce.
+2020-01-16 18:08:49.631 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Exporting binary resources.
+2020-01-16 18:08:49.631 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Serializing object to XML.
+2020-01-16 18:08:49.649 DEBUG content 8000 _a-0000d62a-67b3-8000-da6f-010000010000_951 Object transported.
+2020-01-16 18:08:49.649 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Begin transport.
+2020-01-16 18:08:49.649 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Retrieving object data.
+2020-01-16 18:08:49.665 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Setting uuids of object references.
+2020-01-16 18:08:49.665 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: [Content:id=8001,versionId=-1,name=BUG_Component_FitNesseSafeCard,type=32,subtype=6,uuid=_a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730,parent=7996]
+2020-01-16 18:08:49.676 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: Interface.forum
+2020-01-16 18:08:49.676 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: TypedVariable[name=sectionName,it=3,v=]
+2020-01-16 18:08:49.677 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: TypedVariable[name=editSaveInto,it=193,v=<null>]
+2020-01-16 18:08:49.677 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: TypedVariable[name=viewSaveInto,it=193,v=<null>]
+2020-01-16 18:08:49.677 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: TypedVariable[name=selectedEditPane,it=1,v=<null>]
+2020-01-16 18:08:49.677 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: TypedVariable[name=selectedViewPane,it=1,v=<null>]
+2020-01-16 18:08:49.677 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: TypedVariable[name=cardIndex,it=1,v=<null>]
+2020-01-16 18:08:49.677 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: TypedVariable[name=isReadOnly,it=26,v=<null>]
+2020-01-16 18:08:49.677 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: TypedVariable[name=isModified,it=26,v=<null>]
+2020-01-16 18:08:49.677 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: TypedVariable[name=cardSaveInto,it=193,v=<null>]
+2020-01-16 18:08:49.677 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: Interface.parent
+2020-01-16 18:08:49.681 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@69437de2[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.681 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.682 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.682 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.682 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.682 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.682 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.683 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Completing produce.
+2020-01-16 18:08:49.683 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Exporting binary resources.
+2020-01-16 18:08:49.683 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Serializing object to XML.
+2020-01-16 18:08:49.703 DEBUG content 8001 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730 Object transported.
+2020-01-16 18:08:49.703 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Begin transport.
+2020-01-16 18:08:49.703 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Retrieving object data.
+2020-01-16 18:08:49.727 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Setting uuids of object references.
+2020-01-16 18:08:49.727 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Processing reference: [Content:id=8002,versionId=-1,name=BUG_LayeredLinkTest,type=32,subtype=6,uuid=_a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674,parent=7996]
+2020-01-16 18:08:49.742 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Processing reference: Interface.forum
+2020-01-16 18:08:49.743 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Processing reference: Interface.parent
+2020-01-16 18:08:49.747 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@16433cb1[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.747 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.747 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.747 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.747 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.747 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.747 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.747 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Completing produce.
+2020-01-16 18:08:49.747 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Exporting binary resources.
+2020-01-16 18:08:49.747 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Serializing object to XML.
+2020-01-16 18:08:49.76 DEBUG content 8002 _a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674 Object transported.
+2020-01-16 18:08:49.76 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Begin transport.
+2020-01-16 18:08:49.76 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Retrieving object data.
+2020-01-16 18:08:49.783 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Setting uuids of object references.
+2020-01-16 18:08:49.783 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Processing reference: [Content:id=8014,versionId=-1,name=EM_ConvertHTMLWithNewlines,type=32,subtype=1,uuid=_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677,parent=7883]
+2020-01-16 18:08:49.784 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Processing reference: FreeformRule.forum
+2020-01-16 18:08:49.784 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Processing reference: TypedVariable[name=test,it=3,v=]
+2020-01-16 18:08:49.784 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Processing reference: FreeformRule.parent
+2020-01-16 18:08:49.795 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@3a955f72[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.796 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.796 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.796 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.796 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.796 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.796 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.796 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Completing produce.
+2020-01-16 18:08:49.796 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Exporting binary resources.
+2020-01-16 18:08:49.796 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Serializing object to XML.
+2020-01-16 18:08:49.82 DEBUG content 8015 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49677 Object transported.
+2020-01-16 18:08:49.82 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Begin transport.
+2020-01-16 18:08:49.82 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Retrieving object data.
+2020-01-16 18:08:49.837 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Setting uuids of object references.
+2020-01-16 18:08:49.837 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Processing reference: [Content:id=8016,versionId=-1,name=EM_TestHTMLNewline,type=32,subtype=6,uuid=_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690,parent=7883]
+2020-01-16 18:08:49.837 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Processing reference: Interface.forum
+2020-01-16 18:08:49.838 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Processing reference: Interface.parent
+2020-01-16 18:08:49.842 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@4e5c67f1[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.842 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.842 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.842 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.842 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.842 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.842 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.842 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Completing produce.
+2020-01-16 18:08:49.842 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Exporting binary resources.
+2020-01-16 18:08:49.842 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Serializing object to XML.
+2020-01-16 18:08:49.854 DEBUG content 8016 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_49690 Object transported.
+2020-01-16 18:08:49.854 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Begin transport.
+2020-01-16 18:08:49.854 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Retrieving object data.
+2020-01-16 18:08:49.866 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Setting uuids of object references.
+2020-01-16 18:08:49.866 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Processing reference: [Content:id=8209,versionId=-1,name=EM_striphtml,type=32,subtype=1,uuid=_a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565,parent=7883]
+2020-01-16 18:08:49.867 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Processing reference: FreeformRule.forum
+2020-01-16 18:08:49.867 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Processing reference: TypedVariable[name=test,it=3,v=]
+2020-01-16 18:08:49.867 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Processing reference: FreeformRule.parent
+2020-01-16 18:08:49.875 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@50eaa487[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-01-16 18:08:49.876 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.876 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.876 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2020-01-16 18:08:49.876 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.876 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.876 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-01-16 18:08:49.876 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Completing produce.
+2020-01-16 18:08:49.876 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Exporting binary resources.
+2020-01-16 18:08:49.876 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Serializing object to XML.
+2020-01-16 18:08:49.889 DEBUG content 8213 _a-0000e3d9-c12d-8000-9bd6-011c48011c48_51565 Object transported.
+2020-01-16 18:08:49.892 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Begin transport.
+2020-01-16 18:08:49.892 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Retrieving object data.
+2020-01-16 18:08:49.898 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Setting uuids of object references.
+2020-01-16 18:08:49.898 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Processing reference: ProcessModelFolder.parentFolderId
+2020-01-16 18:08:49.898 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Processing reference: com.appiancorp.suiteapi.process.ProcessRoleMap@1d9564e2[
+  Role[name=ADMIN_OWNER]
+  Role[name=EDITOR]
+  Role[name=EXPLICIT_NONMEMBER]
+  Role[name=VIEWER]
+  Role[name=MANAGER]
+  Role[name=INITIATOR]
+]
+2020-01-16 18:08:49.898 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Processing reference: Role[name=ADMIN_OWNER]
+2020-01-16 18:08:49.898 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Processing reference: Role[name=EDITOR]
+2020-01-16 18:08:49.898 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Processing reference: Role[name=EXPLICIT_NONMEMBER]
+2020-01-16 18:08:49.899 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Processing reference: Role[name=VIEWER]
+2020-01-16 18:08:49.899 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Processing reference: Role[name=MANAGER]
+2020-01-16 18:08:49.899 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Processing reference: Role[name=INITIATOR]
+2020-01-16 18:08:49.899 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Completing produce.
+2020-01-16 18:08:49.899 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Exporting binary resources.
+2020-01-16 18:08:49.899 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Serializing object to XML.
+2020-01-16 18:08:49.91 DEBUG processModelFolder 6 _g-0000e3cc-3c56-8000-fbc5-7f0000014e7a_143 Object transported.
+2020-01-16 18:08:49.912 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Begin transport.
+2020-01-16 18:08:49.912 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Retrieving object data.
+2020-01-16 18:08:49.937 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Setting uuids of object references.
+2020-01-16 18:08:49.937 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Processing reference: ProcessModelHaul.folderId
+2020-01-16 18:08:49.939 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Processing reference: ProcessModelHaul.modelDashboardPageId
+2020-01-16 18:08:49.939 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Processing reference: ProcessModelHaul.processDashboardPageId
+2020-01-16 18:08:49.939 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Processing reference: ProcessModel.emailAttachmentFolderId
+2020-01-16 18:08:49.939 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Processing reference: InternalForm.docId
+2020-01-16 18:08:49.939 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Processing reference: ActivityClassParameter[name=pmID,it=23,v=<null>]
+2020-01-16 18:08:49.939 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Processing reference: ActivityClassParameter[name=inMap,it=111,v={}]
+2020-01-16 18:08:49.939 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Processing reference: ActivityClassParameter[name=procInheritsPriority,it=1,v=1]
+2020-01-16 18:08:49.939 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Processing reference: ActivityClassParameter[name=pmUUID,it=3,v=]
+2020-01-16 18:08:49.94 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Processing reference: ActivityClassParameter[name=isAsynchronous,it=26,v=1]
+2020-01-16 18:08:49.94 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Processing reference: ActivityClassParameter[name=isTransparent,it=26,v=1]
+2020-01-16 18:08:49.94 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Processing reference: ActivityClassParameter[name=inheritSecurity,it=26,v=0]
+2020-01-16 18:08:49.94 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Processing reference: ActivityClassParameter[name=ae-key-resources,it=3,v=]
+2020-01-16 18:08:49.94 DEBUG processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a Processing reference: ActivityClassParameter[name=BodyTemplate,it=13,v=7854]
+2020-01-16 18:08:49.949 ERROR processModel 502 0002e3cc-6951-8000-fbec-7f0000014e7a The processModel [id=502 uuid=0002e3cc-6951-8000-fbec-7f0000014e7a] was not exported because it contains an invalid precedent: content [uuid=7854 location=Node > "Text Doc from Template" > Node Input > "BodyTemplate"] cannot be found. (APNX-1-4070-001) (APNX-1-4071-003)
+com.appiancorp.ix.ProducerException: type=processModel, srcId=502, dstId=0002e3cc-6951-8000-fbec-7f0000014e7a, cause=com.appiancorp.ix.binding.UnresolvedReferenceException: type=content, srcId=7854, ctx={from={processModel: id=502, uuid=0002e3cc-6951-8000-fbec-7f0000014e7a}, md={[Node > "Text Doc from Template" > Node Input > "BodyTemplate"]: {nullable=true, required=true}}}: content [uuid=7854 location=Node > "Text Doc from Template" > Node Input > "BodyTemplate"] cannot be found., level=ERROR
+	at com.appiancorp.ix.ExportProducer.produce(ExportProducer.java:55)
+	at com.appiancorp.ix.ExportProducer.produce(ExportProducer.java:25)
+	at com.appiancorp.ix.Transport.doTransport(Transport.java:463)
+	at com.appiancorp.ix.Transport.transport(Transport.java:406)
+	at com.appiancorp.ix.Transport.bindReferenceInternal(Transport.java:255)
+	at com.appiancorp.ix.Transport.bindReferences(Transport.java:194)
+	at com.appiancorp.ix.ExportDriver.bindReferences(ExportDriver.java:213)
+	at com.appiancorp.ix.ExportDriver.bindReferences(ExportDriver.java:206)
+	at com.appiancorp.ix.data.ApplicationHaul.bindIds(ApplicationHaul.java:216)
+	at com.appiancorp.ix.data.ApplicationHaul.bindIds(ApplicationHaul.java:63)
+	at com.appiancorp.ix.ExportProducer.produce(ExportProducer.java:53)
+	at com.appiancorp.ix.ExportProducer.produce(ExportProducer.java:25)
+	at com.appiancorp.ix.Transport.doTransport(Transport.java:463)
+	at com.appiancorp.ix.Transport.transport(Transport.java:406)
+	at com.appiancorp.ix.Transport.bind(Transport.java:169)
+	at com.appiancorp.ix.Transport.transportAll(Transport.java:311)
+	at com.appiancorp.ix.TransportDriver.transportAll(TransportDriver.java:47)
+	at com.appiancorp.ix.AbstractDriver.lambda$runTransport$0(AbstractDriver.java:127)
+	at com.appiancorp.security.changelog.AuditLogLocationService.runWithLocation(AuditLogLocationService.java:38)
+	at com.appiancorp.ix.AbstractDriver.runTransport(AbstractDriver.java:124)
+	at com.appiancorp.ix.ExportFacade.export(ExportFacade.java:63)
+	at com.appiancorp.object.action.ExportReaction.activate(ExportReaction.java:136)
+	at com.appiancorp.core.expr.reaction.ExternalReactionTree.activate(ExternalReactionTree.java:95)
+	at com.appiancorp.core.expr.reaction.ChainReactionTree.activateReaction(ChainReactionTree.java:224)
+	at com.appiancorp.core.expr.reaction.ChainReactionTree.activate(ChainReactionTree.java:192)
+	at com.appiancorp.core.expr.reaction.ChainReactionTree.activateBody(ChainReactionTree.java:123)
+	at com.appiancorp.core.expr.reaction.ChainReactionTree.activate(ChainReactionTree.java:94)
+	at com.appiancorp.core.expr.reaction.LiveReaction.applySideEffect(LiveReaction.java:37)
+	at com.appiancorp.core.expr.reaction.SaveTarget.setValue0(SaveTarget.java:68)
+	at com.appiancorp.core.expr.reaction.SaveTarget.setValue(SaveTarget.java:58)
+	at com.appiancorp.core.expr.reaction.ContextReferenceActivator.activateReaction(ContextReferenceActivator.java:98)
+	at com.appiancorp.core.expr.reaction.ContextReferenceActivator.activate(ContextReferenceActivator.java:91)
+	at com.appiancorp.core.expr.reaction.ContextReferenceActivator.doActivateContextReference(ContextReferenceActivator.java:64)
+	at com.appiancorp.core.expr.reaction.ContextReferenceActivator.activateContextReference(ContextReferenceActivator.java:45)
+	at com.appiancorp.core.expr.reaction.SaveRequestActivator.doActivate(SaveRequestActivator.java:125)
+	at com.appiancorp.core.expr.reaction.SaveRequestActivator.activate(SaveRequestActivator.java:42)
+	at com.appiancorp.core.expr.reaction.SaveTree.activate(SaveTree.java:89)
+	at com.appiancorp.core.expr.reaction.ReactionTree.activateReaction(ReactionTree.java:98)
+	at com.appiancorp.core.expr.reaction.ReactionTree.activateReactionTreeValue(ReactionTree.java:67)
+	at com.appiancorp.core.expr.reaction.SaveTree.activate(SaveTree.java:87)
+	at com.appiancorp.core.expr.reaction.ReactionTree.activateReaction(ReactionTree.java:98)
+	at com.appiancorp.core.expr.reaction.ReactionTree.activateReactionTreeValue(ReactionTree.java:81)
+	at com.appiancorp.core.expr.reaction.SaveRequestActivator.doActivate(SaveRequestActivator.java:98)
+	at com.appiancorp.core.expr.reaction.SaveRequestActivator.activate(SaveRequestActivator.java:42)
+	at com.appiancorp.core.op.TypeEvaluable.evalTreeOrValue(TypeEvaluable.java:152)
+	at com.appiancorp.core.op.TypeEvaluable.cast0(TypeEvaluable.java:183)
+	at com.appiancorp.core.op.TypeEvaluable.cast(TypeEvaluable.java:170)
+	at com.appiancorp.core.op.TypeEvaluable.recordFromKeywords(TypeEvaluable.java:265)
+	at com.appiancorp.core.op.TypeEvaluable.eval(TypeEvaluable.java:115)
+	at com.appiancorp.core.expr.tree.TypeCall.evalType(TypeCall.java:120)
+	at com.appiancorp.core.expr.tree.TypeCall.evalWrapped(TypeCall.java:101)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.TypeCall.eval0(TypeCall.java:68)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalTreeOrValue(Rule.java:892)
+	at com.appiancorp.core.expr.rule.Rule.cast(Rule.java:858)
+	at com.appiancorp.core.expr.rule.Rule.prepareBindingsPositionalInternalSerial(Rule.java:839)
+	at com.appiancorp.core.expr.rule.Rule.prepareBindingsPositional(Rule.java:784)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:579)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.tree.FreeformRule.evalWrapped(FreeformRule.java:114)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.FreeformRule.eval0(FreeformRule.java:90)
+	at com.appiancorp.core.expr.Tree.evalWrapped(Tree.java:263)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:245)
+	at com.appiancorp.core.expr.tree.WithAssignment.evalLet(WithAssignment.java:32)
+	at com.appiancorp.core.expr.tree.AbstractLetAssignment.eval(AbstractLetAssignment.java:78)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.executeSerial(AbstractLetFunction.java:320)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.processBindings(AbstractLetFunction.java:306)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.processBindings(AbstractLetFunction.java:248)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.eval00(AbstractLetFunction.java:75)
+	at com.appiancorp.core.expr.tree.With.eval0(With.java:92)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalBody(Rule.java:1153)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:646)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.tree.FreeformRule.evalWrapped(FreeformRule.java:114)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.FreeformRule.eval0(FreeformRule.java:90)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalBody(Rule.java:1153)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:646)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.tree.FreeformRule.evalWrapped(FreeformRule.java:114)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.FreeformRule.eval0(FreeformRule.java:90)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.ListAtIndices.evalWrapped(ListAtIndices.java:220)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.Tree.eval0(Tree.java:291)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.If.evalInner(If.java:167)
+	at com.appiancorp.core.expr.tree.If.eval0(If.java:97)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalTreeOrValue(Rule.java:892)
+	at com.appiancorp.core.expr.rule.Rule.cast(Rule.java:858)
+	at com.appiancorp.core.expr.rule.Rule.prepareBindingsKeywords(Rule.java:744)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:627)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.tree.FreeformRule.evalWrapped(FreeformRule.java:114)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.FreeformRule.eval0(FreeformRule.java:90)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalTreeOrValue(Rule.java:892)
+	at com.appiancorp.core.expr.rule.Rule.cast(Rule.java:858)
+	at com.appiancorp.core.expr.rule.Rule.prepareBindingsKeywords(Rule.java:744)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:627)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.tree.FreeformRule.evalWrapped(FreeformRule.java:114)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.FreeformRule.eval0(FreeformRule.java:90)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.evaluateLetBody(AbstractLetFunction.java:149)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.eval00(AbstractLetFunction.java:92)
+	at com.appiancorp.core.expr.tree.Load.eval0(Load.java:100)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalBody(Rule.java:1153)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:646)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.ProjectionEvaluable.eval(ProjectionEvaluable.java:75)
+	at com.appiancorp.core.expr.ProjectionEvaluable.eval(ProjectionEvaluable.java:57)
+	at com.appiancorp.core.expr.tree.FunctionCall.evalEvaluable(FunctionCall.java:401)
+	at com.appiancorp.core.expr.tree.FunctionCall.evalWrapped(FunctionCall.java:487)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.Tree.eval0(Tree.java:291)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.SyncState.eval0(SyncState.java:114)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.evaluateLetBody(AbstractLetFunction.java:149)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.eval00(AbstractLetFunction.java:92)
+	at com.appiancorp.core.expr.tree.Load.eval0(Load.java:100)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalBody(Rule.java:1153)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:646)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.tree.FreeformRule.evalWrapped(FreeformRule.java:114)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.FreeformRule.eval0(FreeformRule.java:90)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalTreeOrValue(Rule.java:892)
+	at com.appiancorp.core.expr.rule.Rule.cast(Rule.java:858)
+	at com.appiancorp.core.expr.rule.Rule.prepareBindingsPositionalInternalSerial(Rule.java:839)
+	at com.appiancorp.core.expr.rule.Rule.prepareBindingsPositional(Rule.java:784)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:579)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.tree.FreeformRule.evalWrapped(FreeformRule.java:114)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.FreeformRule.eval0(FreeformRule.java:90)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalBody(Rule.java:1153)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:646)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.LambdaEvaluable.eval(LambdaEvaluable.java:78)
+	at com.appiancorp.core.expr.tree.FunctionCall.evalEvaluable(FunctionCall.java:401)
+	at com.appiancorp.core.expr.tree.FunctionCall.evalWrapped(FunctionCall.java:487)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.Tree.eval0(Tree.java:291)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.evaluateLetBody(AbstractLetFunction.java:149)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.eval00(AbstractLetFunction.java:92)
+	at com.appiancorp.core.expr.tree.With.eval0(With.java:92)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.evaluateLetBody(AbstractLetFunction.java:149)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.eval00(AbstractLetFunction.java:92)
+	at com.appiancorp.core.expr.tree.Load.eval0(Load.java:100)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.performancelog.PerformanceLogPageFunction.eval0(PerformanceLogPageFunction.java:88)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalBody(Rule.java:1153)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:646)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.tree.FreeformRule.evalWrapped(FreeformRule.java:114)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.FreeformRule.eval0(FreeformRule.java:90)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalBody(Rule.java:1153)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:646)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.LambdaEvaluable.eval(LambdaEvaluable.java:78)
+	at com.appiancorp.core.expr.tree.FunctionCall.evalEvaluable(FunctionCall.java:401)
+	at com.appiancorp.core.expr.tree.FunctionCall.evalWrapped(FunctionCall.java:487)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.Tree.eval0(Tree.java:291)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.If.evalInner(If.java:167)
+	at com.appiancorp.core.expr.tree.If.eval0(If.java:97)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalBody(Rule.java:1153)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:646)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.tree.FreeformRule.evalWrapped(FreeformRule.java:114)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.FreeformRule.eval0(FreeformRule.java:90)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.If.evalInner(If.java:167)
+	at com.appiancorp.core.expr.tree.If.eval0(If.java:97)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.evaluateLetBody(AbstractLetFunction.java:149)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.eval00(AbstractLetFunction.java:92)
+	at com.appiancorp.core.expr.tree.With.eval0(With.java:92)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.evaluateLetBody(AbstractLetFunction.java:149)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.eval00(AbstractLetFunction.java:92)
+	at com.appiancorp.core.expr.tree.Load.eval0(Load.java:100)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalBody(Rule.java:1153)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:646)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.tree.FreeformRule.evalWrapped(FreeformRule.java:114)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.FreeformRule.eval0(FreeformRule.java:90)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.If.evalInner(If.java:167)
+	at com.appiancorp.core.expr.tree.If.eval0(If.java:97)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.evaluateLetBody(AbstractLetFunction.java:149)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.eval00(AbstractLetFunction.java:92)
+	at com.appiancorp.core.expr.tree.With.eval0(With.java:92)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalBody(Rule.java:1153)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:646)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.tree.FreeformRule.evalWrapped(FreeformRule.java:114)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.FreeformRule.eval0(FreeformRule.java:90)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.If.evalInner(If.java:167)
+	at com.appiancorp.core.expr.tree.If.eval0(If.java:97)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.evaluateLetBody(AbstractLetFunction.java:149)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.eval00(AbstractLetFunction.java:92)
+	at com.appiancorp.core.expr.tree.Load.eval0(Load.java:100)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalBody(Rule.java:1153)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:646)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.tree.FreeformRule.evalWrapped(FreeformRule.java:114)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.FreeformRule.eval0(FreeformRule.java:90)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.tree.If.evalInner(If.java:167)
+	at com.appiancorp.core.expr.tree.If.eval0(If.java:97)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalTreeOrValue(Rule.java:892)
+	at com.appiancorp.core.expr.rule.Rule.cast(Rule.java:858)
+	at com.appiancorp.core.expr.rule.Rule.prepareBindingsKeywords(Rule.java:744)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:627)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.tree.FreeformRule.evalWrapped(FreeformRule.java:114)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.FreeformRule.eval0(FreeformRule.java:90)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.rule.Rule.evalTreeOrValue(Rule.java:892)
+	at com.appiancorp.core.expr.rule.Rule.cast(Rule.java:858)
+	at com.appiancorp.core.expr.rule.Rule.prepareBindingsPositionalInternalSerial(Rule.java:839)
+	at com.appiancorp.core.expr.rule.Rule.prepareBindingsPositional(Rule.java:784)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:579)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:472)
+	at com.appiancorp.core.expr.rule.Rule.evalWithMetrics(Rule.java:460)
+	at com.appiancorp.core.expr.rule.Rule.eval(Rule.java:446)
+	at com.appiancorp.core.expr.tree.FreeformRule.evalWrapped(FreeformRule.java:114)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.FreeformRule.eval0(FreeformRule.java:90)
+	at com.appiancorp.core.expr.Tree.evalWrapped(Tree.java:263)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:245)
+	at com.appiancorp.core.expr.tree.WithAssignment.evalLet(WithAssignment.java:32)
+	at com.appiancorp.core.expr.tree.AbstractLetAssignment.eval(AbstractLetAssignment.java:78)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.executeSerial(AbstractLetFunction.java:320)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.processBindings(AbstractLetFunction.java:306)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.processBindings(AbstractLetFunction.java:248)
+	at com.appiancorp.core.expr.tree.AbstractLetFunction.eval00(AbstractLetFunction.java:75)
+	at com.appiancorp.core.expr.tree.With.eval0(With.java:92)
+	at com.appiancorp.core.expr.tree.TreeEvaluable.evalWrapped(TreeEvaluable.java:88)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:298)
+	at com.appiancorp.core.expr.tree.SpecialFunction.eval0(SpecialFunction.java:76)
+	at com.appiancorp.core.expr.Tree.eval(Tree.java:277)
+	at com.appiancorp.core.expr.Parse.evalInner(Parse.java:335)
+	at com.appiancorp.core.expr.Parse.eval(Parse.java:294)
+	at com.appiancorp.sail.UiEvaluator$UserInterfaceGenerator.doSaveEvaluation(UiEvaluator.java:609)
+	at com.appiancorp.sail.UiEvaluator$UserInterfaceGenerator.processOneSaveRequest(UiEvaluator.java:463)
+	at com.appiancorp.sail.UiEvaluator$UserInterfaceGenerator.generateUserInterface(UiEvaluator.java:303)
+	at com.appiancorp.sail.UiEvaluator$UserInterfaceGenerator.generateUserInterface(UiEvaluator.java:284)
+	at com.appiancorp.sail.FullEvaluator.doReEvaluation(FullEvaluator.java:73)
+	at com.appiancorp.sail.ValueUiEvaluator.lambda$reeval$1(ValueUiEvaluator.java:210)
+	at com.appiancorp.sail.TransactionalEvaluatorImpl.evaluate(TransactionalEvaluatorImpl.java:39)
+	at com.appiancorp.sail.ValueUiEvaluator.reeval(ValueUiEvaluator.java:200)
+	at com.appiancorp.sail.TvUiEvaluator.reeval(TvUiEvaluator.java:44)
+	at com.appiancorp.sail.TvUiEvaluator.reeval(TvUiEvaluator.java:20)
+	at com.appiancorp.sail.UiEvaluator.eval(UiEvaluator.java:151)
+	at com.appiancorp.sail.UiEvaluator.eval(UiEvaluator.java:97)
+	at com.appiancorp.sail.UiServiceImpl.reevaluateUi0(UiServiceImpl.java:116)
+	at com.appiancorp.sail.UiServiceImpl.reevaluateUi(UiServiceImpl.java:78)
+	at com.appiancorp.sail.UiServiceImpl.reevaluateUi(UiServiceImpl.java:56)
+	at com.appiancorp.sail.UiServiceImpl.reevaluateUi(UiServiceImpl.java:51)
+	at com.appiancorp.sailapp.SailApplicationUiSource.evaluate(SailApplicationUiSource.java:179)
+	at com.appiancorp.security.changelog.AuditLogLocationService.callWithLocation(AuditLogLocationService.java:25)
+	at com.appiancorp.sailapp.SailApplicationUtils.evaluate0(SailApplicationUtils.java:96)
+	at com.appiancorp.sailapp.SailApplicationUtils.evaluateUiWithPlog(SailApplicationUtils.java:75)
+	at com.appiancorp.sailapp.SailApplicationUtils.evaluateSailApplicationUI(SailApplicationUtils.java:57)
+	at com.appiancorp.rest.standalone.SailApplicationRestService.reeval(SailApplicationRestService.java:118)
+	at sun.reflect.GeneratedMethodAccessor1403.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.atlassian.plugins.rest.common.interceptor.impl.DispatchProviderHelper$TypeOutInvoker$1.invoke(DispatchProviderHelper.java:169)
+	at com.atlassian.plugins.rest.common.interceptor.impl.DispatchProviderHelper$1.intercept(DispatchProviderHelper.java:83)
+	at com.atlassian.plugins.rest.common.interceptor.impl.DefaultMethodInvocation.invoke(DefaultMethodInvocation.java:53)
+	at com.atlassian.plugins.rest.common.expand.interceptor.ExpandInterceptor.intercept(ExpandInterceptor.java:34)
+	at com.atlassian.plugins.rest.common.interceptor.impl.DefaultMethodInvocation.invoke(DefaultMethodInvocation.java:53)
+	at com.atlassian.plugins.rest.common.interceptor.impl.DispatchProviderHelper.invokeMethodWithInterceptors(DispatchProviderHelper.java:110)
+	at com.atlassian.plugins.rest.common.interceptor.impl.DispatchProviderHelper$TypeOutInvoker._dispatch(DispatchProviderHelper.java:167)
+	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:558)
+	at com.atlassian.plugins.rest.module.RestDelegatingServletFilter$JerseyOsgiServletContainer.doFilter(RestDelegatingServletFilter.java:154)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:829)
+	at com.atlassian.plugins.rest.module.RestDelegatingServletFilter.doFilter(RestDelegatingServletFilter.java:68)
+	at com.atlassian.plugin.servlet.filter.DelegatingPluginFilter.doFilter(DelegatingPluginFilter.java:64)
+	at com.atlassian.plugin.servlet.filter.IteratingFilterChain.doFilter(IteratingFilterChain.java:37)
+	at com.atlassian.plugin.servlet.filter.ServletFilterModuleContainerFilter.doFilter(ServletFilterModuleContainerFilter.java:70)
+	at com.atlassian.plugin.servlet.filter.ServletFilterModuleContainerFilter.doFilter(ServletFilterModuleContainerFilter.java:58)
+	at com.atlassian.plugin.servlet.filter.DelegatingPluginFilter.doFilter(DelegatingPluginFilter.java:64)
+	at com.atlassian.plugin.servlet.filter.IteratingFilterChain.doFilter(IteratingFilterChain.java:37)
+	at com.atlassian.plugin.servlet.filter.DelegatingPluginFilter$1.doFilter(DelegatingPluginFilter.java:58)
+	at com.atlassian.plugins.rest.module.servlet.RestServletUtilsUpdaterFilter.doFilterInternal(RestServletUtilsUpdaterFilter.java:22)
+	at com.atlassian.plugins.rest.module.servlet.RestServletUtilsUpdaterFilter.doFilter(RestServletUtilsUpdaterFilter.java:34)
+	at com.atlassian.plugin.servlet.filter.DelegatingPluginFilter.doFilter(DelegatingPluginFilter.java:64)
+	at com.atlassian.plugin.servlet.filter.IteratingFilterChain.doFilter(IteratingFilterChain.java:37)
+	at com.atlassian.plugin.servlet.filter.ServletFilterModuleContainerFilter.doFilter(ServletFilterModuleContainerFilter.java:70)
+	at com.atlassian.plugin.servlet.filter.ServletFilterModuleContainerFilter.doFilter(ServletFilterModuleContainerFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.security.web.AppsPortalVisibilityFilter.doFilter(AppsPortalVisibilityFilter.java:79)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:176)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:389)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.tempo.util.PerformanceLogFilter.doFilter(PerformanceLogFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.common.web.PathMatchExclusionFilter.doFilter(PathMatchExclusionFilter.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.security.web.FrameOptionsFilter.doFilter(FrameOptionsFilter.java:40)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.security.auth.ForceSetPasswordFilter.doFilter(ForceSetPasswordFilter.java:47)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.security.auth.AuthenticationStatusHeaderFilter.doFilter(AuthenticationStatusHeaderFilter.java:38)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.security.xss.XssFilter.doFilter(XssFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.security.csp.CspFilter.doFilter(CspFilter.java:77)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at com.appiancorp.security.auth.activity.UserActivityFilter.doFilter(UserActivityFilter.java:47)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.appiancorp.security.auth.rememberme.CookieTheftRedirectFilter.doFilter(CookieTheftRedirectFilter.java:37)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.channel.ChannelProcessingFilter.doFilter(ChannelProcessingFilter.java:157)
+	at com.appiancorp.security.csrf.CsrfChannelProcessingFilter.callSuperDoFilter(CsrfChannelProcessingFilter.java:107)
+	at com.appiancorp.security.csrf.CsrfChannelProcessingFilter.doFilter(CsrfChannelProcessingFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:155)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.appiancorp.security.auth.MobileClientValidationFilter.doFilter(MobileClientValidationFilter.java:48)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.common.web.HttpMethodOverrideFilter.doFilter(HttpMethodOverrideFilter.java:34)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.security.cors.CorsFilter.doFilter(CorsFilter.java:274)
+	at com.appiancorp.security.cors.CorsFilter.doFilter(CorsFilter.java:226)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.security.auth.maintwindow.MaintWindowHeaderFilter.doFilter(MaintWindowHeaderFilter.java:31)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.security.auth.logging.AuthenticationLoggingFilter.doFilter(AuthenticationLoggingFilter.java:37)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.security.auth.AuthProviderFilter.doFilter(AuthProviderFilter.java:80)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.common.web.UserAgentFilter.doFilter(UserAgentFilter.java:40)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.security.web.DomainFilter.doFilter(DomainFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.ap2.environment.EnvironmentFilter.doFilter(EnvironmentFilter.java:87)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.common.web.ThreadLocalRequestFilter.doFilter(ThreadLocalRequestFilter.java:34)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.ap2.NullByteInjectionFilter.doFilter(NullByteInjectionFilter.java:32)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.ap2.EncodingFilter.doFilter(EncodingFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.common.web.HttpStrictTransportSecurityFilter.doFilter(HttpStrictTransportSecurityFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.appiancorp.common.monitoring.prometheus.HttpResponseMetricsFilter.doFilter(HttpResponseMetricsFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:668)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.ajp.AjpProcessor.service(AjpProcessor.java:482)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:810)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.appiancorp.ix.binding.UnresolvedReferenceException: type=content, srcId=7854, ctx={from={processModel: id=502, uuid=0002e3cc-6951-8000-fbec-7f0000014e7a}, md={[Node > "Text Doc from Template" > Node Input > "BodyTemplate"]: {nullable=true, required=true}}}: content [uuid=7854 location=Node > "Text Doc from Template" > Node Input > "BodyTemplate"] cannot be found.
+	at com.appiancorp.ix.Transport.bindReference(Transport.java:219)
+	at com.appiancorp.ix.data.binders.datatype.SimpleCustomBinder$ExportBindingMapWrapper.bindRef(SimpleCustomBinder.java:177)
+	at com.appiancorp.ix.data.binders.datatype.DefaultDatatypeBinder.bindInternal(DefaultDatatypeBinder.java:15)
+	at com.appiancorp.ix.data.binders.datatype.DataTypeValueBinder.bind(DataTypeValueBinder.java:40)
+	at com.appiancorp.ix.data.binders.datatype.TypedValueBinder.bindRefs(TypedValueBinder.java:103)
+	at com.appiancorp.ix.data.binders.datatype.ActivityClassParameterBinder.bindRefs(ActivityClassParameterBinder.java:26)
+	at com.appiancorp.ix.data.binders.datatype.ActivityClassParameterBinder.bindRefs(ActivityClassParameterBinder.java:20)
+	at com.appiancorp.ix.data.binders.datatype.SimpleCustomBinder.bindLocalIdsToUuids(SimpleCustomBinder.java:49)
+	at com.appiancorp.ix.refs.BeanBinder$ForeignKeyExportProcessor.process(BeanBinder.java:88)
+	at com.appiancorp.ix.refs.ForeignKeyTraverser.traverseAndProcessInternal(ForeignKeyTraverser.java:83)
+	at com.appiancorp.ix.refs.ForeignKeyTraverser.traverseAndProcessInternal(ForeignKeyTraverser.java:98)
+	at com.appiancorp.ix.refs.ForeignKeyTraverser.traverseAndProcessInternal(ForeignKeyTraverser.java:121)
+	at com.appiancorp.ix.refs.ForeignKeyTraverser.traverseAndProcessInternal(ForeignKeyTraverser.java:121)
+	at com.appiancorp.ix.refs.ForeignKeyTraverser.traverseAndProcessInternal(ForeignKeyTraverser.java:98)
+	at com.appiancorp.ix.refs.ForeignKeyTraverser.traverseAndProcessInternal(ForeignKeyTraverser.java:121)
+	at com.appiancorp.ix.refs.ForeignKeyTraverser.traverseAndProcessInternal(ForeignKeyTraverser.java:121)
+	at com.appiancorp.ix.refs.ForeignKeyTraverser.traverseAndProcess(ForeignKeyTraverser.java:51)
+	at com.appiancorp.ix.refs.BeanBinder.bindLocalIdsToUuids(BeanBinder.java:43)
+	at com.appiancorp.ix.Haul.bindIds(Haul.java:141)
+	at com.appiancorp.ix.data.ProcessModelHaul.bindIds(ProcessModelHaul.java:459)
+	at com.appiancorp.ix.data.ProcessModelHaul.bindIds(ProcessModelHaul.java:88)
+	at com.appiancorp.ix.ExportProducer.produce(ExportProducer.java:53)
+	... 561 more
+2020-01-16 18:08:49.949 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Begin transport.
+2020-01-16 18:08:49.949 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Retrieving object data.
+2020-01-16 18:08:49.989 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Setting uuids of object references.
+2020-01-16 18:08:49.989 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ProcessModelHaul.folderId
+2020-01-16 18:08:49.99 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ProcessModelHaul.modelDashboardPageId
+2020-01-16 18:08:49.99 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ProcessModelHaul.processDashboardPageId
+2020-01-16 18:08:49.99 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ProcessModel.emailAttachmentFolderId
+2020-01-16 18:08:49.991 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: InternalForm.docId
+2020-01-16 18:08:49.991 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ActivityClassParameter[name=pmID,it=23,v=<null>]
+2020-01-16 18:08:49.991 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ActivityClassParameter[name=inMap,it=111,v={}]
+2020-01-16 18:08:49.991 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ActivityClassParameter[name=procInheritsPriority,it=1,v=1]
+2020-01-16 18:08:49.991 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ActivityClassParameter[name=pmUUID,it=3,v=]
+2020-01-16 18:08:49.991 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ActivityClassParameter[name=isAsynchronous,it=26,v=1]
+2020-01-16 18:08:49.992 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ActivityClassParameter[name=isTransparent,it=26,v=1]
+2020-01-16 18:08:49.992 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ActivityClassParameter[name=inheritSecurity,it=26,v=0]
+2020-01-16 18:08:49.992 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ActivityClassParameter[name=EM_Person,it=3730,v=<null>]
+2020-01-16 18:08:49.992 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: FormElement[label=Question1]
+2020-01-16 18:08:49.993 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: InternalForm.docId
+2020-01-16 18:08:49.993 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ActivityClassParameter[name=DataStoreEntity,it=81,v=8bfc6b52-4eb8-49d8-a903-a2b35b3604e7@7969]
+2020-01-16 18:08:49.996 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ActivityClassParameter[name=StoredValues,it=197,v=<null>]
+2020-01-16 18:08:49.996 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ProcessVariable[name=EM_Person,it=3730,v=<null>]
+2020-01-16 18:08:49.996 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ProcessVariable[name=cancel,it=26,v=<null>]
+2020-01-16 18:08:49.996 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: ProcessVariable[name=readOnly,it=26,v=<null>]
+2020-01-16 18:08:49.996 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: com.appiancorp.suiteapi.process.ProcessRoleMap@2c89ab7f[
+  Role[name=ADMIN_OWNER]
+  Role[name=EDITOR]
+  Role[name=EXPLICIT_NONMEMBER]
+  Role[name=VIEWER]
+  Role[name=MANAGER]
+  Role[name=INITIATOR]
+]
+2020-01-16 18:08:49.996 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: Role[name=ADMIN_OWNER]
+2020-01-16 18:08:49.996 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: Role[name=EDITOR]
+2020-01-16 18:08:49.996 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: Role[name=EXPLICIT_NONMEMBER]
+2020-01-16 18:08:49.996 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: Role[name=VIEWER]
+2020-01-16 18:08:49.996 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: Role[name=MANAGER]
+2020-01-16 18:08:49.996 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Processing reference: Role[name=INITIATOR]
+2020-01-16 18:08:49.999 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Completing produce.
+2020-01-16 18:08:49.999 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Exporting binary resources.
+2020-01-16 18:08:49.999 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Serializing object to XML.
+2020-01-16 18:08:50.011 DEBUG processModel 533 0002e3d0-340e-8000-fc24-7f0000014e7a Object transported.
+2020-01-16 18:08:50.011 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Begin transport.
+2020-01-16 18:08:50.011 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Retrieving object data.
+2020-01-16 18:08:50.029 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Setting uuids of object references.
+2020-01-16 18:08:50.029 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: ProcessModelHaul.folderId
+2020-01-16 18:08:50.03 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: ProcessModelHaul.modelDashboardPageId
+2020-01-16 18:08:50.03 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: ProcessModelHaul.processDashboardPageId
+2020-01-16 18:08:50.03 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: ProcessModel.emailAttachmentFolderId
+2020-01-16 18:08:50.03 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: ActivityClassParameter[name=pmID,it=23,v=<null>]
+2020-01-16 18:08:50.03 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: ActivityClassParameter[name=inMap,it=111,v={}]
+2020-01-16 18:08:50.03 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: ActivityClassParameter[name=procInheritsPriority,it=1,v=1]
+2020-01-16 18:08:50.03 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: ActivityClassParameter[name=pmUUID,it=3,v=]
+2020-01-16 18:08:50.031 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: ActivityClassParameter[name=isAsynchronous,it=26,v=1]
+2020-01-16 18:08:50.031 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: ActivityClassParameter[name=isTransparent,it=26,v=1]
+2020-01-16 18:08:50.031 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: ActivityClassParameter[name=inheritSecurity,it=26,v=0]
+2020-01-16 18:08:50.031 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: com.appiancorp.suiteapi.process.ProcessRoleMap@6cf0a326[
+  Role[name=ADMIN_OWNER]
+  Role[name=EDITOR]
+  Role[name=EXPLICIT_NONMEMBER]
+  Role[name=VIEWER]
+  Role[name=MANAGER]
+  Role[name=INITIATOR]
+]
+2020-01-16 18:08:50.031 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: Role[name=ADMIN_OWNER]
+2020-01-16 18:08:50.031 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: Role[name=EDITOR]
+2020-01-16 18:08:50.031 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: Role[name=EXPLICIT_NONMEMBER]
+2020-01-16 18:08:50.031 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: Role[name=VIEWER]
+2020-01-16 18:08:50.031 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: Role[name=MANAGER]
+2020-01-16 18:08:50.031 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Processing reference: Role[name=INITIATOR]
+2020-01-16 18:08:50.031 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Completing produce.
+2020-01-16 18:08:50.031 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Exporting binary resources.
+2020-01-16 18:08:50.031 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Serializing object to XML.
+2020-01-16 18:08:50.041 DEBUG processModel 588 0002e3da-c51d-8000-fc7a-7f0000014e7a Object transported.
+2020-01-16 18:08:50.042 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Completing produce.
+2020-01-16 18:08:50.042 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Exporting binary resources.
+2020-01-16 18:08:50.042 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Serializing object to XML.
+2020-01-16 18:08:50.048 DEBUG application 7696 _a-0000e3cc-3c56-8000-9bd4-011c48011c48_47016 Object transported.

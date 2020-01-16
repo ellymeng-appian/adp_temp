@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e087-8fd8-8000-9ba2-011c48011c48_5785388</versionUuid>
+    <rulesFolder>
+        <name>Appian Common Objects</name>
+        <uuid>_a-0000d618-256c-8000-da6f-010000010000_859</uuid>
+        <description></description>
+        <parentUuid>SYSTEM_RULES_ROOT</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+    </rulesFolder>
+    <roleMap public="true">
+        <role inherit="false" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="administrators">
+            <users>
+                <userUuid>Administrator</userUuid>
+            </users>
+            <groups>
+                <groupUuid>_e-0000dec9-5813-8000-30e7-011e94011e94_10</groupUuid>
+            </groups>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000dfe1-7063-8000-9ba2-011c48011c48_2876738"/>
+        <historyInfo versionUuid="_a-0000e03d-b5db-8000-9ba2-011c48011c48_294810"/>
+        <historyInfo versionUuid="_a-0000e0ac-675b-8000-9ba2-011c48011c48_712434"/>
+        <historyInfo versionUuid="_a-0000e087-8fd8-8000-9ba2-011c48011c48_5785388"/>
+    </history>
+</contentHaul>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49219</versionUuid>
+    <rule>
+        <name>EM_CreatePerson</name>
+        <uuid>_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49207</uuid>
+        <description></description>
+        <parentUuid>_a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition>#"SYSTEM_SYSRULES_formLayout_v1"(
+  label: "Person CDT",
+  contents: {
+    #"SYSTEM_SYSRULES_columnsLayout"(
+      columns: {
+        #"SYSTEM_SYSRULES_columnLayout"(
+          contents: {
+            #"SYSTEM_SYSRULES_textField"(
+              label: "First Name",
+              labelPosition: if(
+                ri!readOnly,
+                "ADJACENT",
+                "ABOVE"
+              ),
+              saveInto: ri!EM_PersonCDT.firstName,
+              readOnly: ri!readOnly,
+              validations: if(
+                len(
+                  ri!EM_PersonCDT.firstName
+                ) &gt; 255,
+                "Value may not be longer than 255 characters. You have entered " &amp; len(
+                  ri!EM_PersonCDT.firstName
+                ) &amp; " characters.",
+                null
+              )
+            ),
+            #"SYSTEM_SYSRULES_integerField"(
+              label: "Age",
+              labelPosition: if(
+                ri!readOnly,
+                "ADJACENT",
+                "ABOVE"
+              ),
+              saveInto: ri!EM_PersonCDT.age,
+              readOnly: ri!readOnly
+            )
+          }
+        ),
+        #"SYSTEM_SYSRULES_columnLayout"(
+          contents: {
+            #"SYSTEM_SYSRULES_textField"(
+              label: "Last Name",
+              labelPosition: if(
+                ri!readOnly,
+                "ADJACENT",
+                "ABOVE"
+              ),
+              saveInto: ri!EM_PersonCDT.lastName,
+              readOnly: ri!readOnly,
+              validations: if(
+                len(
+                  ri!EM_PersonCDT.lastName
+                ) &gt; 255,
+                "Value may not be longer than 255 characters. You have entered " &amp; len(
+                  ri!EM_PersonCDT.lastName
+                ) &amp; " characters.",
+                null
+              )
+            ),
+            #"SYSTEM_SYSRULES_dateField"(
+              label: "Start Date",
+              labelPosition: if(
+                ri!readOnly,
+                "ADJACENT",
+                "ABOVE"
+              ),
+              saveInto: ri!EM_PersonCDT.startDate,
+              readOnly: ri!readOnly
+            )
+          }
+        )
+      }
+    )
+  },
+  buttons: #"SYSTEM_SYSRULES_ButtonLayout"(
+    primaryButtons: {
+      #"SYSTEM_SYSRULES_ButtonWidget"(
+        label: "Submit",
+        submit: true,
+        style: "PRIMARY"
+      )
+    },
+    secondaryButtons: {
+      #"SYSTEM_SYSRULES_ButtonWidget"(
+        label: "Cancel",
+        value: true,
+        saveInto: ri!cancel,
+        submit: true,
+        style: "NORMAL",
+        validate: false
+      )
+    },
+    showWhen: or(
+      isnull(
+        ri!readOnly
+      ),
+      not(
+        ri!readOnly
+      )
+    )
+  )
+)</definition>
+        <namedTypedValue>
+            <name>EM_PersonCDT</name>
+            <type>
+                <name>EM_PersonCDT</name>
+                <namespace>urn:com:appian:types</namespace>
+            </type>
+        </namedTypedValue>
+        <namedTypedValue>
+            <name>cancel</name>
+            <type>
+                <name>boolean</name>
+                <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+            </type>
+        </namedTypedValue>
+        <namedTypedValue>
+            <name>readOnly</name>
+            <type>
+                <name>boolean</name>
+                <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+            </type>
+        </namedTypedValue>
+        <preferredEditor>interface</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+    </rule>
+    <roleMap public="true">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <typedValue>
+        <type>
+            <name>RuleTestConfig?list</name>
+            <namespace>http://www.appian.com/ae/types/2009</namespace>
+        </type>
+        <value>
+            <el>
+                <a:name/>
+                <a:ruleInputTestConfigs>
+                    <a:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="a:Expression">'type!{urn:com:appian:types}EM_PersonCDT'()</a:value>
+                    <a:nameRef>EM_PersonCDT</a:nameRef>
+                    <a:id/>
+                </a:ruleInputTestConfigs>
+                <a:ruleInputTestConfigs>
+                    <a:value xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" xsi:type="xsd:boolean"/>
+                    <a:nameRef>cancel</a:nameRef>
+                    <a:id/>
+                </a:ruleInputTestConfigs>
+                <a:ruleInputTestConfigs>
+                    <a:value xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" xsi:type="xsd:boolean"/>
+                    <a:nameRef>readOnly</a:nameRef>
+                    <a:id/>
+                </a:ruleInputTestConfigs>
+                <a:assertions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </el>
+        </value>
+    </typedValue>
+    <history>
+        <historyInfo versionUuid="_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49219"/>
+    </history>
+</contentHaul>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49307</versionUuid>
+    <rule>
+        <name>EM_Grid</name>
+        <uuid>_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49220</uuid>
+        <description></description>
+        <parentUuid>_a-0000e3cc-3c56-8000-9bd4-011c48011c48_48371</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition>a!localVariables(
+  local!dataResults: #"SYSTEM_SYSRULES_queryEntity_v1"(
+    entity: #"_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49226",
+    query: #"SYSTEM_SYSRULES_query"(
+      pagingInfo: 
+      #"SYSTEM_SYSRULES_pagingInfo"(
+        startIndex: 1,
+        batchSize: -1
+      )
+    ),
+    fetchTotalCount: true
+  ).data,
+  local!ageSum: sum(index(local!dataResults, "age",0)),
+  local!expression: {},
+  
+ {
+  #"SYSTEM_SYSRULES_gridField_v1"(
+    label: "Read-only Grid",
+    labelPosition: "ABOVE",
+    data: {
+      local!dataResults,
+      {startDate: fn!date(2020, 1, 1), age: local!ageSum, lastName: "Du", firstName: "Jon", personId: 2}
+    },
+    columns: {
+      #"SYSTEM_SYSRULES_gridColumn"(
+        label: "Person Id",
+        sortField: "personId",
+        value: fv!row.personId,
+        align: "END"
+      ),
+      #"SYSTEM_SYSRULES_gridColumn"(
+        label: "First Name",
+        sortField: "firstName",
+        value: fv!row.firstName
+      ),
+      #"SYSTEM_SYSRULES_gridColumn"(
+        label: "Last Name",
+        sortField: "lastName",
+        value: fv!row.lastName
+      ),
+      #"SYSTEM_SYSRULES_gridColumn"(
+        label: "Age",
+        sortField: "age",
+        value: fv!row.age,
+        align: "END"
+      ),
+      #"SYSTEM_SYSRULES_gridColumn"(
+        label: "Start Date",
+        sortField: "startDate",
+        value: fv!row.startDate,
+        align: "END"
+      )
+    },
+    validations: {}
+  )
+ }
+)</definition>
+        <preferredEditor>interface</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+    </rule>
+    <roleMap public="true">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e3cc-3c56-8000-9bd4-011c48011c48_49307"/>
+    </history>
+</contentHaul>

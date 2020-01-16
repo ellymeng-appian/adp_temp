@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221848</versionUuid>
+    <rule>
+        <name>BUG_LayeredLinkTest</name>
+        <uuid>_a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221674</uuid>
+        <description></description>
+        <parentUuid>_a-0000e124-5986-8000-9ba2-011c48011c48_948581</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition>/* BUG_LayeredLinkTest */
+
+load(
+  local!sectionName: "No Automatic Color Changing",
+  local!sectionName2: "Automatic Color Changing",
+  local!isModified: false(),
+  local!isReadOnly: false(),
+  local!selectedEditPane: 1,
+  local!selectedViewPane: 2,
+  local!cardIndex: 1,
+  with(
+    local!isSelected: or(
+      #"_a-0000d62a-67b3-8000-da6f-010000010000_951"(local!selectedEditPane),
+      contains(
+        local!selectedEditPane, 
+        local!cardIndex
+      )
+    ),
+    local!isViewed: contains(
+      local!selectedViewPane, 
+      local!cardIndex
+    ),
+    {
+      #"SYSTEM_SYSRULES_richTextDisplayField"(
+        labelPosition: "COLLAPSED",
+        value: {
+          if(
+            local!cardIndex = 1,
+            #"SYSTEM_SYSRULES_richTextIcon"(
+              icon: "toggle-on",
+              size: "LARGE",
+              linkStyle: "STANDALONE",
+              link: #"SYSTEM_SYSRULES_dynamicLink"(
+                value: 2,
+                saveInto: local!cardIndex
+              )
+            ),
+            #"SYSTEM_SYSRULES_richTextIcon"(
+              icon: "toggle-off",
+              size: "LARGE",
+              linkStyle: "STANDALONE",
+              link: #"SYSTEM_SYSRULES_dynamicLink"(
+                value: 1,
+                saveInto: local!cardIndex
+              )
+            )
+          ),
+          #"SYSTEM_SYSRULES_richTextItem_v1"(text: " "),
+          #"SYSTEM_SYSRULES_richTextItem_v1"(
+            text: if(
+              local!cardIndex = 1,
+              "Read Only On",
+              "Read Only Off"
+            ),
+            style: "STRONG"
+          )
+        }
+      ),
+      #"SYSTEM_SYSRULES_columnsLayout"(
+        columns: {
+          /* 
+          Card Layout with Links Layered 
+          Layer 1: Card Layout
+          Layer 2: Grid Layout,
+          Layer 3: Rich Text Display Field,
+          Then Dynamic Link
+          */
+          #"SYSTEM_SYSRULES_columnLayout"(
+            #"_a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221730"(
+              sectionName: local!sectionName,
+              selectedEditPane: local!selectedEditPane,
+              selectedViewPane: local!selectedViewPane,
+              cardIndex: local!cardIndex,
+              isReadOnly: local!isReadOnly,
+              isModified: local!isModified
+            )
+          ),
+          /* Normal Card */
+          #"SYSTEM_SYSRULES_columnLayout"(
+            #"SYSTEM_SYSRULES_cardLayout"(
+              height: "SHORT",
+              style: if(
+                or(
+                  #"_a-0000d62a-67b3-8000-da6f-010000010000_951"(local!selectedEditPane),
+                  contains(
+                    local!selectedEditPane, 
+                    local!cardIndex
+                  )
+                ),
+                "ACCENT",
+                contains(
+                  local!selectedViewPane, 
+                  local!cardIndex
+                ),
+                "INFO",
+                "#F5F5F5"
+              ),
+              contents: {
+                #"SYSTEM_SYSRULES_richTextDisplayField"(
+                  value: {
+                    #"SYSTEM_SYSRULES_richTextItem_v1"(
+                      text: local!sectionName2,
+                      color:"ACCENT",
+                      style: "STRONG",
+                      size: "MEDIUM"
+                    ),
+                  },
+                  align: "CENTER"
+                ),
+                #"SYSTEM_SYSRULES_richTextDisplayField"(
+                  value: {
+                    #"SYSTEM_SYSRULES_richTextIcon"(
+                      showWhen: local!isReadOnly &lt;&gt; true,
+                      icon: "Edit",
+                      size: "LARGE",
+                      caption: if(
+                        local!isModified = false(),
+                        "",
+                        "Edit"
+                      ),
+                      link: #"SYSTEM_SYSRULES_dynamicLink"(
+                        label: local!sectionName2,
+                        value: local!cardIndex,
+                        showWhen: and(
+                          local!isModified = false(),
+                          not(
+                            contains(
+                              local!selectedEditPane,
+                              local!cardIndex
+                            )
+                          )
+                        )
+                      ),
+                      linkStyle: "STANDALONE"
+                    ),
+                    #"SYSTEM_SYSRULES_richTextItem_v1"(
+                      showWhen: local!isReadOnly &lt;&gt; true(),
+                      text: "    "
+                    ),
+                    #"SYSTEM_SYSRULES_richTextIcon"(
+                      showWhen: local!isReadOnly &lt;&gt; true(),
+                      icon: if(local!selectedViewPane = local!cardIndex,
+                        "eye-slash",
+                        "eye"
+                      ),
+                      size: "LARGE",
+                      caption:if(local!selectedViewPane = local!cardIndex,
+                        "Cancel",
+                        "View"
+                      ),
+                      link: #"SYSTEM_SYSRULES_dynamicLink"(
+                        label: local!sectionName2,
+                        value: if(local!selectedViewPane = local!cardIndex,
+                          {},
+                          local!cardIndex
+                        ),
+                        showWhen: not(
+                          contains(
+                            local!selectedEditPane,
+                            local!cardIndex
+                          )
+                        )
+                      ),
+                      linkStyle: "STANDALONE"
+                    )
+                  },
+                  align: "CENTER"
+                )
+              },
+              link: #"SYSTEM_SYSRULES_dynamicLink"(
+                label: local!sectionName2,
+                value: if(
+                  local!selectedEditPane = local!cardIndex,
+                  {},
+                  local!cardIndex
+                ),
+                showWhen: and(
+                  not(
+                    contains(
+                      local!selectedEditPane,
+                      local!cardIndex
+                    )
+                  ), 
+                  local!isReadOnly = true()
+                )
+              )
+            )
+          )
+        }
+      )
+    }
+  )
+)</definition>
+        <metadataExpr></metadataExpr>
+        <preferredEditor>interface</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+    </rule>
+    <roleMap public="true">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221788"/>
+        <historyInfo versionUuid="_a-0000e3b3-a93d-8000-9ba2-011c48011c48_1221848"/>
+    </history>
+</contentHaul>

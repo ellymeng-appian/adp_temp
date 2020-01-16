@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<groupHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_e-0001e0f6-520f-8000-9aee-01075c01075c_77329</versionUuid>
+    <group>
+        <name>ACS_Administrators</name>
+        <securityMap>SECURITYMAP_TEAM</securityMap>
+        <uuid>_e-0000dec9-5813-8000-30e7-011e94011e94_10</uuid>
+        <groupTypeUuid>SYSTEM_GROUP_TYPE_CUSTOM</groupTypeUuid>
+        <description>Administrators for the ACS application</description>
+        <delegatedCreation>false</delegatedCreation>
+        <memberPolicy>MEMBERPOLICY_CLOSED</memberPolicy>
+        <viewingPolicy>VIEWINGPOLICY_LOW</viewingPolicy>
+        <attributes/>
+    </group>
+    <members>
+        <users/>
+        <groups/>
+    </members>
+    <admins>
+        <users/>
+        <groups>
+            <groupUuid>_e-0000dec9-5813-8000-30e7-011e94011e94_10</groupUuid>
+        </groups>
+    </admins>
+    <ruleSet/>
+    <history>
+        <historyInfo versionUuid="_e-0000e11b-27cb-8000-9aee-01075c01075c_236"/>
+        <historyInfo versionUuid="_e-0001e0f6-520f-8000-9aee-01075c01075c_77329"/>
+    </history>
+</groupHaul>
